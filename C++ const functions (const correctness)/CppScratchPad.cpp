@@ -5,9 +5,17 @@ using std::endl;
 //------------------ C++ const functions (const correctness) --------------------------
 //ref link:https://www.youtube.com/watch?v=ehJKvbbe9hk
 
-const int MY_INT = 5;
+//const int MY_INT = 5;
+
+class Cow
+{
+	int mooCount;
+public:
+	Cow() { mooCount = 0; }
+	void moo() { cout << mooCount++ << endl; }
+};
 
 void main()
 {
-	cout << MY_INT << endl;
+	//cout << MY_INT << endl;
 }

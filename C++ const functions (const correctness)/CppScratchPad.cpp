@@ -12,7 +12,7 @@ class Cow
 	int mooCount;
 public:
 	Cow() { mooCount = 0; }
-	void moo() { cout << mooCount++ << endl; }
+	void moo() { cout << mooCount++ << endl; }		//none-const func
 	void saySomething() { cout << "Hello" << endl; }
 };
 

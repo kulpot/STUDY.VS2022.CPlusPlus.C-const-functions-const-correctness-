@@ -13,9 +13,17 @@ class Cow
 public:
 	Cow() { mooCount = 0; }
 	void moo() { cout << mooCount++ << endl; }
+	void saySomething() { cout << "Hello" << endl; }
 };
 
 void main()
 {
+	//Cow c;
+	const Cow c;
+	c.moo();
+	c.moo();
+	c.saySomething();
+	c.moo();
+
 	//cout << MY_INT << endl;
 }

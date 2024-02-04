@@ -10,10 +10,16 @@ using std::endl;
 class Cow
 {
 	int mooCount;
+	//const int mooCount;
+
 public:
 	Cow() { mooCount = 0; }
-	void moo() { cout << mooCount++ << endl; }		//none-const func	, modifies int mooCount;
-	void saySomething() { cout << "Hello" << endl; }	// none modify int mooCount;
+	//void moo() { cout << mooCount++ << endl; }		//none-const func	, modifies int mooCount;
+	//void saySomething() { cout << "Hello" << endl; }	// none modify int mooCount;
+	
+	//void moo() const { cout << mooCount++ << endl; }		//error: const cant modify mooCount to mooCount++
+	void moo() const { cout << mooCount << endl; }			
+	void saySomething() const { cout << "Hello" << endl; }
 };
 
 void main()
